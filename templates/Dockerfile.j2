@@ -1,10 +1,6 @@
 # Build Markdown-PP Container
-ARG IMAGE_USER=geoffh1977
-ARG IMAGE_NAME=python3
-ARG IMAGE_VERSION=latest
-
-FROM ${IMAGE_USER}/${IMAGE_NAME}:${IMAGE_VERSION}
-LABEL maintainer="geoffh1977 <geoffh1977@gmail.com>"
+FROM {{ dockerUser + "/" + buildImageName + ":" + buildImageVersion }}
+LABEL maintainer="{{ dockerUser }} <{{ dockerUserEmail }}>"
 USER root
 
 # Install Markdown PP

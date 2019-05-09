@@ -1,0 +1,14 @@
+---
+# Docker User
+dockerUser: geoffh1977
+dockerUserEmail: geoffh1977@gmail.com
+license: gnu-gpl-v3.0
+
+# Source Build Variables
+buildImageName: python3
+buildImageVersion: latest
+
+# Final Image Variables
+finalImageName: markdown-pp
+finalImageVersion: latest
+appName: Markdown Pre-Processor
